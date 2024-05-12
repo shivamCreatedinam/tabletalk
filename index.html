@@ -5,12 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food Lover</title>
+  <title>TableTalk</title>
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css" />
   <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css"
+    integrity="sha512-gb3xyfj/FrHtphPVLYaKBZ8WyMYEXD1+Cgt3FiKhFmbN2UuOpite2w1Lgmw6NzfsNmMGX+BbVra4ceV95z9Vaw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
@@ -24,59 +30,50 @@
         <ion-icon name="grid-outline"></ion-icon>
       </label>
 
-      <label class="logo"><img src="https://createdinam.in/Puravankara/img/images/main_logo.png" class="logo"
-          style="width: 100px;"></label>
-
+      <label class="logo"><img src="./images/logo_main.jpg" class="logo" style="width: 75px;"></label>
       <ul>
         <li><a href="#hero-section" class="active" onclick="closeMenu()">Home</a></li>
         <li><a href="#about" onclick="closeMenu()">About</a></li>
         <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
-        <li><a href="#team" onclick="closeMenu()">Team</a></li>
+        <li><a href="#team" onclick="closeMenu()">Brand's</a></li>
         <li><a href="#form" onclick="closeMenu()">Contact Us</a></li>
       </ul>
     </nav>
   </div>
   <!-- End Menu -->
-
-  <!-- Hero Section -->
-  <!--  <div class="section flex" id="hero-section">
-      <div class="text">
-        <h1 class="primary">
-          It's Not Just Food, <br />
-          It's an <span>Experience</span>
-        </h1>
-
-        <p class="tertiary">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
-          provident dolorum. Voluptatum ducimus minima quasi unde, voluptatibus
-          soluta eligendi. Enim, architecto autem.
-        </p>
-
-        <a href="#menu" class="btn">Explore Menu</a>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./images/05.jpg" alt="Los Angeles" style="width:100%;">
       </div>
-      <div class="visual">
-        <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/home-banner.png" alt="" />
+      <div class="item">
+        <img src="./images/03.jpg" alt="Chicago" style="width:100%;">
       </div>
-    </div> -->
-  <!-- End Hero Section -->
-
-  <main>
-    <div class="containerz">
-      <img class="img" src="./images/3.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/3.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/2.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/5.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/6.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/7.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/8.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/9.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/10.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/11.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/12.png" alt="Lake louise picture" class="image1">
-      <img class="img" src="./images/13.png" alt="Lake louise picture" class="image1">
+      <div class="item">
+        <img src="./images/01.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/02.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/06.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/04.jpg" alt="New york" style="width:100%;">
+      </div>
     </div>
-  </main>
-
+    <!-- Left and right controls -->
+  </div>
   <!-- About -->
   <div class="section" id="about">
     <div class="container flex">
@@ -84,64 +81,149 @@
         <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/about.png" alt="" />
       </div>
       <div class="text">
-        <div class="secondary">About Our Restaurant</div>
+        <div class="secondary">About Our Franchise</div>
         <h2 class="primary">150+</h2>
 
         <h3 class="tertiary">Our Delicious Food</h3>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
-          itaque saepe id hic rem doloribus quas esse voluptatibus eius sequi,
-          possimus maxime dolores tempore facilis fugit porro mollitia, est
-          consequuntur.
+          Looking for the next big thing in food? You just found it. We curate and cultivate the honest, mouthwatering
+          food brands of tomorrow,
+          TODAY. Our dine-in food mall serves food that’s good for you, good for the planet, and good for your soul.
+          So, let’s taste the future today. It’s deliciously sustainable.
         </p>
-
-        <a href="#menu" class="btn">Explore Menu</a>
       </div>
     </div>
   </div>
   <!-- End About -->
+
+  <!-- key hilights -->
+  <div class="section pt-6">
+    <h2 class="secondary">Great Reason to Partner with </h2>
+    <div class="slider--teams">
+      <section class="service-categories text-xs-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/1.png">
+                  <h4 class="card-title">Quick ROI
+                    with 12-15 Month</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/2.png">
+                  <h4 class="card-title">Low
+                    Investment</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/3.png">
+                  <h4 class="card-title">Marketing
+                    & Sales Strategy</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/4.png">
+                  <h4 class="card-title">Day to Day
+                    Operation Support</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/5.png">
+                  <h4 class="card-title">Supply
+                    & Distribution</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse ">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/6.png">
+                  <h4 class="card-title">It Infrastructure & Licensing
+                    & Intellectual Property</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/7.png">
+                  <h4 class="card-title">HR Management
+                    with Training</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/8.png">
+                  <h4 class="card-title">Selection of Location
+                    & Setup of Outlet</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Row-->
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- key hilights -->
+
   <!-- FAQ -->
   <div class="section" id="faq">
     <h2 class="secondary">Frequently Asked Questions</h2>
 
     <div class="faq">
       <details>
-        <summary>I got wrong food what shoud I do?</summary>
+        <summary>what is Food Philosophy?</summary>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores amet sunt at?
+            No mystery meals here, just pure, flavourful innovation. We craft food that’s as exciting as the future.
           </p>
         </div>
       </details>
 
       <details>
-        <summary>I got wrong food what shoud I do?</summary>
+        <summary>what is Sustainability?</summary>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores amet sunt at?
+            We bring you seasonal flavours, knowing your food journeyed responsibly and supporting local heroes. Every
+            aspect of our operations is rooted in a commitment to environmental protection.
           </p>
         </div>
       </details>
 
       <details>
-        <summary>I got wrong food what shoud I do?</summary>
+        <summary>what is Sourcing?</summary>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores amet sunt at?
+            We believe that great food starts with great ingredients. That’s why we go to great lengths to source the
+            finest and freshest food for you from trusted partners around the world.
           </p>
         </div>
       </details>
 
       <details>
-        <summary>I got wrong food what shoud I do?</summary>
+        <summary>what is Quality Products?</summary>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores amet sunt at?
+            When you demand the best, you deserve nothing less. Every product that graces our shelves is hand-selected
+            for its exceptional taste, texture, and purity.
           </p>
         </div>
       </details>
@@ -150,240 +232,173 @@
   <!-- End FAQ -->
   <!--  team -->
   <div class="section pt-6" id="team">
-    <h2 class="secondary">Our Team</h2>
+    <h2 class="secondary">Our Brand's</h2>
     <div class="slider--teams">
       <div class="container">
         <ul id="list" class="row justify-content-center mt-5">
           <li class="team-data col-md-2">
             <div class="d-flex text-center flex-column">
               <div class="span4" style="max-height: 200px">
-                <img class="hexagon" alt="2" src="/images/BobaBlastLogo.jpg">
+                <img class="hexagon" alt="2" src="./images/BurgerLogo.jpg">
+                <div class="sub-hexagon"></div>
+              </div>
+              <h3 class="p-1">Burger</h3>
+            </div>
+          </li>
+          <li class="team-data col-md-2">
+            <div class="d-flex text-center flex-column">
+              <div class="span4" style="max-height: 200px">
+                <img class="hexagon" alt="2" src="./images/Meallogo.jpg">
+                <div class="sub-hexagon"></div>
+              </div>
+              <h3 class="p-1">Beeji De Meals</h3>
+            </div>
+          </li>
+          <li class="team-data col-md-2">
+            <div class="d-flex text-center flex-column">
+              <div class="span4" style="max-height: 200px">
+                <img class="hexagon" alt="2" src="./images/VandanamLogo.jpg">
+                <div class="sub-hexagon"></div>
+              </div>
+              <h3 class="p-1">Vandanam</h3>
+            </div>
+          </li>
+          <li class="team-data col-md-2">
+            <div class="d-flex text-center flex-column">
+              <div class="span4" style="max-height: 200px">
+                <img class="hexagon" alt="2" src="./images/YehHaiMumbaiMeriJaanLogo.jpg">
+                <div class="sub-hexagon"></div>
+              </div>
+              <h3 class="p-1">Yeh Hai Mumbai Meri Jaan</h3>
+            </div>
+          </li>
+          <li class="team-data col-md-2">
+            <div class="d-flex text-center flex-column">
+              <div class="span4" style="max-height: 200px">
+                <img class="hexagon" alt="2" src="./images/OverloadedWafflelogotype.png">
+                <div class="sub-hexagon"></div>
+              </div>
+              <h3 class="p-1">Over loaded Waffle</h3>
+            </div>
+          </li>
+          <li class="team-data col-md-2">
+            <div class="d-flex text-center flex-column">
+              <div class="span4" style="max-height: 200px">
+                <img class="hexagon" alt="2" src="./images/BobaBlastLogo.jpg">
                 <div class="sub-hexagon"></div>
               </div>
               <h3 class="p-1">Boba Blast</h3>
-              <p>Head of Team</p>
             </div>
-          </li>
-
-          <li class="team-data col-md-2">
-            <div class="d-flex text-center flex-column">
-              <div class="span4" style="max-height: 200px">
-                <img class="hexagon" alt="2" src="/images/BurgerLogo.jpg">
-                <div class="sub-hexagon"></div>
-              </div>
-              <h3 class="p-1"> Burger</h3>
-              <p>Head of Team</p>
-            </div>
-
-          </li>
-
-          <li class="team-data col-md-2">
-            <div class="d-flex text-center flex-column">
-              <div class="span4" style="max-height: 200px">
-                <img class="hexagon" alt="2" src="images/Meallogo.jpg">
-                <div class="sub-hexagon"></div>
-              </div>
-              <h3 class="p-1">Billie 2</h3>
-              <p>Head of Team</p>
-            </div>
-          </li>
-
-
-          <li class="team-data col-md-2">
-            <div class="d-flex text-center flex-column">
-              <div class="span4" style="max-height: 200px">
-                <img class="hexagon" alt="2" src="images/OverloadedWafflelogotype.png">
-                <div class="sub-hexagon"></div>
-              </div>
-              <h3 class="p-1">Billie 4</h3>
-              <p>Head of Team</p>
-            </div>
-          </li>
-          <li class="team-data col-md-2">
-            <div class="d-flex text-center flex-column">
-              <div class="span4" style="max-height: 200px">
-                <img class="hexagon" alt="2" src="images/VandanamLogo.jpg">
-                <div class="sub-hexagon"></div>
-              </div>
-              <h3 class="p-1">Billie 4</h3>
-              <p>Head of Team</p>
-            </div>
-          </li>
-          <li class="team-data col-md-2">
-            <div class="d-flex text-center flex-column">
-              <div class="span4" style="max-height: 200px">
-                <img class="hexagon" alt="2" src="images/YehHaiMumbaiMeriJaanLogo.jpg">
-                <div class="sub-hexagon"></div>
-              </div>
-              <h3 class="p-1">Billie 4</h3>
-              <p>Head of Team</p>
-            </div>
-          </li>
+          </li> 
         </ul>
       </div>
     </div>
   </div>
 
-
-
-  <!--  form -->
-  <div class="section" id="form">
-    <section class="contact-sec sec-pad">
-      <div class="container">
+  <div class="section scroll-area" id="section7">
+    <div class="ms-main-content ms-career-page d-flex align-items-center">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <div class="contact-detail">
-              <h1 class="section-title">Contact us</h1>
-
-              <ul class="contact-ul">
-                <li><i class="fa fa-location-dot"></i> 91, Ram Nagar, Ram Mandir, Delhi</li>
-
-                <li>
-                  <i class="fa fa-phone"></i>
-                  <a href="tel:08510004495"><b>0255000XXXX</b></a>,
-                  <a href="tel:08510005495"><b>0251600XXXX</b></a>
-                </li>
-
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:pardeepkumar4bjp@gmail.com"><b> demounknown@gmail.com</b></a>
-                </li>
-              </ul>
-
-              <span>
-                <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-              </span>
+          <div class="col-lg-12">
+            <div class="ms-hero-box">
+              <h2 class="mb-4 contact-title">CONTACT <span class="ms-site-color">US</span></h2>
+              <form class="ms-contact-form" method="POST" action="index.php.html#section7">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <!-- <p class="ms-succes-msg"></p> -->
+                    <!-- <p clas="ms-error-msg"></p> -->
+                  </div>
+                  <div class="form-group col-md-6 pr-md-2 pr-lg-3">
+                    <label for="inputname">NAME*</label>
+                    <input type="text" placeholder="Enter Name" name="name" class="form-control" id="inputname"
+                      required>
+                  </div>
+                  <div class="form-group col-md-6 pl-md-2 pl-lg-3">
+                    <label for="inputemail">EMAIL ID*</label>
+                    <input type="email" name="email" placeholder="Enter Email ID" class="form-control" id="inputemail"
+                      required>
+                  </div>
+                  <div class="form-group col-md-6 pr-md-2 pr-lg-3">
+                    <label for="inputphone">PHONE NUMBER*</label>
+                    <input type="tel" name="phone" placeholder="Enter Phone Number" class="form-control" id="inputphone"
+                      required>
+                  </div>
+                  <div class="form-group col-md-6 pl-md-2 pl-lg-3">
+                    <label for="inputcompany">SUBJECT*</label>
+                    <input type="text" name="company" placeholder="Enter Subject" class="form-control" id="inputcompany"
+                      required>
+                  </div>
+                  <div class="form-group col-md-12"></div>
+                  <div class="form-group col-md-12">
+                    <label for="inputmessage">MESSAGE*</label>
+                    <textarea rows="3" name="message" placeholder="Enter Your Message" class="form-control"
+                      id="inputmessage" required></textarea>
+                  </div>
+                </div>
+                <button type="submit" name="submit" class="btn ms-btn mt-2 d-block ml-auto my-buttons">Submit
+                  Message</button>
+              </form>
             </div>
           </div>
-
-          <div class="col-md-6">
-            <form action="#" class="contFrm" method="POST">
-              <div class="row">
-                <div class="col-sm-6">
-                  <input type="text" name="name" placeholder="Your Name" class="inptFld" required />
-                </div>
-
-                <div class="col-sm-6">
-                  <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
-                </div>
-
-                <div class="col-sm-6">
-                  <input type="tel" name="phone" placeholder="Phone Number" class="inptFld" required />
-                </div>
-
-                <div class="col-sm-6">
-                  <input type="text" name="sub" placeholder="Subject" class="inptFld" required />
-                </div>
-
-                <div class="col-12">
-                  <textarea class="inptFld" rows="" cols="" placeholder="Your Message..." required></textarea>
-                </div>
-
-                <div class="col-12">
-                  <input type="submit" name="submit" value="SUBMIT" class="inptBtn" />
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
-
-        <div style="text-align: center; margin-top: 20px;">
-
-        </div>
-
       </div>
-    </section>
+    </div>
   </div>
-
-
-
 
   <!-- Footer -->
   <footer class="footer-section">
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="widget company-intro-widget">
-              <a href="index.html" class="site-logo"><img
-                  src="https://createdinam.in/Puravankara/img/images/main_logo.png"></a>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever.</p>
-              <ul class="company-footer-contact-list">
-                <li><i class="fas fa-phone"></i>0123456789</li>
-                <li><i class="fas fa-clock"></i>Mon - Sat 8.00 - 18.00</li>
-              </ul>
+              <a href="index.html" class="site-logo"><img src="./images/logo_main.jpg" class="logo"
+                  style="width: 70px;"></a>
+              <p>High revenue with min resource & low investment</p>
+              <!-- <ul class="company-footer-contact-list">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</li>
+              </ul> -->
             </div>
           </div><!-- widget end -->
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="widget course-links-widget">
-              <h5 class="widget-title">Popular Courses</h5>
-              <ul class="courses-link-list">
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Academic English</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Web Technology</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>PC Systems</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Ui Web Design</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Web Development</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Apps Development</a></li>
-              </ul>
-            </div>
-          </div><!-- widget end -->
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="widget course-links-widget">
-              <h5 class="widget-title">Popular Courses</h5>
-              <ul class="courses-link-list">
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Academic English</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Web Technology</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>PC Systems</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Ui Web Design</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Web Development</a></li>
-                <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Apps Development</a></li>
-              </ul>
-            </div>
-          </div><!-- widget end -->
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="widget newsletter-widget">
-              <h5 class="widget-title">Newsletter</h5>
-              <div class="footer-newsletter">
-                <p>Sign Up to Our Newsletter to Get Latest Updates & Services</p>
-                <form class="news-letter-form">
-                  <input type="email" name="news-email" id="news-email" placeholder="Your email address">
-                  <input type="submit" value="Send">
-                </form>
-              </div>
+              <h5 class="widget-title">Follow Us</h5>
+              <ul class="social-icons">
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+              </ul>
+              <ul class="company-footer-contact-list">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</li>
+              </ul>
             </div>
           </div><!-- widget end -->
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom text-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-6 text-sm-left text-center">
-            <span class="copy-right-text">© 2019 <a href="https://codepen.io/anupkumar92">Anup</a> All Rights
+          <div class="col-md-12 col-sm-12 text-sm-center text-center">
+            <span class="copy-right-text">© 2024 <a href="https://codepen.io/anupkumar92">❤️ Createdinam</a> All Rights
               Reserved.</span>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <ul class="terms-privacy d-flex justify-content-sm-end justify-content-center">
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
+          </div> 
         </div>
       </div>
     </div><!-- footer-bottom end -->
   </footer>
 
-
   <!--   BTN   -->
-  <a href="https://www.youtube.com/watch?v=G6jkqDqTYo0" class="youtube" target="__blank">
-    <p>Watch Tutorial 🔥</p>
-  </a>
   <!-- End Footer -->
 
   <!-- Ion Icons Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
   <script>
