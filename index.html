@@ -36,7 +36,7 @@
         <li><a href="#about" onclick="closeMenu()">About us</a></li>
         <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
         <li><a href="#team" onclick="closeMenu()">Brand's</a></li>
-        <li><a href="#form" onclick="closeMenu()">Contact Us</a></li>
+        <li><a href="#form" onclick="closeMenu()">Contact us</a></li>
       </ul>
     </nav>
   </div>
@@ -96,7 +96,7 @@
     </div>
   </div>
   <!-- End About -->
-
+ 
   <!-- key hilights -->
   <div class="section pt-6">
     <h2 class="secondary">Great Reason to Partner with </h2>
@@ -231,7 +231,7 @@
   </div>
   <!-- End FAQ -->
   <!--  team -->
-  <div class="section pt-6" id="team">
+  <!-- <div class="section pt-6" id="team">
     <h2 class="secondary">Our Brand's</h2>
     <div class="slider--teams">
       <div class="container">
@@ -293,7 +293,53 @@
         </ul>
       </div>
     </div>
+  </div> -->
+
+<div class="container1">
+  <h2 class="tag">Our Brand's</h2>
+  <div class="container2">
+    <ul id="brand-list">
+<li>
+  <div>
+    <img src="./images/BurgerLogo.jpg" alt="Burger">
+    <h3>Burger</h3>
   </div>
+</li>
+<li>
+  <div>
+    <img src="./images/Meallogo.jpg" alt="Beeji De Meals">
+    <h3>Beeji De Meals</h3>
+  </div>
+</li>
+<li>
+  <div>
+    <img src="./images/VandanamLogo.jpg" alt="Vandanam">
+    <h3>Vandanam</h3>
+  </div>
+</li>
+<li>
+  <div>
+    <img src="./images/YehHaiMumbaiMeriJaanLogo.jpg" alt="Yeh Hai Mumbai Meri Jaan">
+    <h3>Yeh Hai Mumbai Meri Jaan</h3>
+  </div>
+</li>
+<li>
+  <div>
+    <img src="./images/OverloadedWafflelogotype.png" alt="Over loaded Waffle">
+    <h3>Over loaded Waffle</h3>
+  </div>
+</li>
+<li>
+  <div>
+    <img src="./images/BobaBlastLogo.jpg" alt="Boba Blast">
+    <h3>Boba Blast</h3>
+  </div>
+</li>
+    </ul>
+  </div>  
+
+</div>
+
 
   <div class="section scroll-area" id="section7">
     <div class="ms-main-content ms-career-page d-flex align-items-center">
@@ -437,6 +483,35 @@
     function closeMenu() {
       document.getElementById('check').checked = false;
     }
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const listItems = document.querySelectorAll('#brand-list li');
+  let currentIndex = 0;
+
+  function scaleNextItem() {
+    // Remove the scale-up class from all items
+    listItems.forEach(item => {
+      item.classList.remove('scale-up');
+    });
+
+    // Add the scale-up class to the current item
+    listItems[currentIndex].classList.add('scale-up');
+
+    // Move to the next item
+    currentIndex = (currentIndex + 1) % listItems.length;
+
+    // Schedule the next scaling after 3 seconds
+    setTimeout(scaleNextItem, 3000);
+  }
+
+  // Start the scaling process
+  scaleNextItem();
+});
+
+
+
   </script>
 </body>
 
