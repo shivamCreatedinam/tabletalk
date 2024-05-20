@@ -557,7 +557,7 @@ img {
 
 .footer-top .widget-title {
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .courses-link-list li+li {
@@ -1547,6 +1547,7 @@ select {
 }
 
 .card-block img.circle {
+  margin-top: 25px;
   width: 50px;
   height: 50px;
 }
@@ -1594,4 +1595,56 @@ ul.social-icons li {
 
 ul.social-icons li:hover {
   color: #fbe526;
+}
+
+#about .secondary {
+  text-align: left;
+}
+
+.cards {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 350px;
+  /* min-width: 250; */
+  height: 350px;
+  ;
+  transition: transform 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-18px);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: 'Museo Sans Rounded 500';
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+h1.ourways-title {
+  color: #7d2d49;
+}
+
+.cards.ourways-box {}
+
+.cards.ourways-box h2.card-title {
+  color: #ffb607;
+  font-size: 22px;
 }
