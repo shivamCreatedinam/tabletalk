@@ -448,37 +448,37 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      class TeamSlide {
-        constructor() {
-          this.teamData = document.querySelectorAll(".team-data");
-          this.index = 0;
-          this.slide();
-        }
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   class TeamSlide {
+    //     constructor() {
+    //       this.teamData = document.querySelectorAll(".team-data");
+    //       this.index = 0;
+    //       this.slide();
+    //     }
 
-        slide() {
-          setInterval(() => {
-            if (this.teamData.length === 0) {
-              return;
-            }
+    //     slide() {
+    //       setInterval(() => {
+    //         if (this.teamData.length === 0) {
+    //           return;
+    //         }
 
-            this.teamData[this.index].classList.remove('team-data-activate');
+    //         this.teamData[this.index].classList.remove('team-data-activate');
 
-            this.index++;
-
-
-            if (this.index > this.teamData.length - 1) {
-              this.index = 0;
-            }
-
-            this.teamData[this.index].classList.add('team-data-activate');
+    //         this.index++;
 
 
-          }, 3000);
-        }
-      }
-      new TeamSlide();
-    });
+    //         if (this.index > this.teamData.length - 1) {
+    //           this.index = 0;
+    //         }
+
+    //         this.teamData[this.index].classList.add('team-data-activate');
+
+
+    //       }, 3000);
+    //     }
+    //   }
+    //   new TeamSlide();
+    // });
 
     function closeMenu() {
       document.getElementById('check').checked = false;
@@ -491,22 +491,17 @@
   let currentIndex = 0;
 
   function scaleNextItem() {
-    // Remove the scale-up class from all items
     listItems.forEach(item => {
       item.classList.remove('scale-up');
     });
 
-    // Add the scale-up class to the current item
     listItems[currentIndex].classList.add('scale-up');
 
-    // Move to the next item
     currentIndex = (currentIndex + 1) % listItems.length;
 
-    // Schedule the next scaling after 3 seconds
     setTimeout(scaleNextItem, 3000);
   }
 
-  // Start the scaling process
   scaleNextItem();
 });
 
