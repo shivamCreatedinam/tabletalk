@@ -23,6 +23,7 @@ body {
   background: #fff;
   color: var(--clr-secondary);
   overflow-x: hidden;
+ 
 
 }
 
@@ -264,6 +265,24 @@ nav ul li a {
 #hero-section .visual img {
   margin-left: auto;
 }
+
+
+
+@media (max-width: 1024px) {
+   #about .container, .service-categories .container {
+      max-width: 820px;
+  }
+
+  #about .container .secondary {
+    text-align: start;
+  }
+
+  .service-categories .service-card {
+    min-height: 221px;
+    min-width: 190px;
+  }
+}
+
 
 /* End Hero Section */
 
@@ -1204,8 +1223,8 @@ form.contFrm {
     padding-top: 40%;
   }
 
-  .container {
-    height: 80vh;
+  .footer-top .container {
+    height: 35vh;
   }
 
   main {
@@ -1224,7 +1243,7 @@ html {
 
 body {
   color: #000002;
-  background: url(../images/Chinese.jpg) center;
+  /* background: url(../images/Chinese.jpg) center; */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1388,6 +1407,8 @@ a:hover {
     border-radius: 50%;
     position: absolute;
   }
+
+  
 }
 
 .ms-navmenu li.active a:before,
@@ -1419,6 +1440,20 @@ a:hover {
   /*background-size: cover;*/
   /* padding-left: 320px; */
   overflow: hidden;
+}
+
+/* responsive  */
+
+@media (max-width: 1050px) {
+  .ms-main-content {
+    width: 100%;
+    min-height: 57vh;
+    /*background: url('../images/bnr.jpg') center;*/
+    /*background-size: cover;*/
+    /* padding-left: 320px; */
+    overflow: hidden;
+  }
+  
 }
 
 .ms-abt-section {
@@ -1550,6 +1585,7 @@ select {
 }
 
 .card-block img.circle {
+  margin-top: 21px;
   width: 50px;
   height: 50px;
 }
@@ -1580,6 +1616,24 @@ select {
 .service-card:hover img.circle {
   filter: brightness(0.5);
 }
+
+
+/* @media (max-width: 1100px) { */
+  /* .reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  } */
+/*   
+    .reasons .col-md-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    } */
+  
+/* } */
+
+
+
+
 
 ul.social-icons {
   list-style-type: none;
@@ -1657,17 +1711,16 @@ ul.social-icons li:hover {
   position: absolute;
   top: -9px;
   left: 16px;
-  width: 170px; /* Adjust based on image size + border */
-  height: 170px; /* Adjust based on image size + border */
+  width: 170px; 
+  height: 170px; 
   border: 5px solid #7D2D49;
   border-radius: 50%;
   box-sizing: border-box;
   transition: transform 0.5s ease;
-  z-index: 0; /* Ensure ring is below the image */
+  z-index: 0; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Spin effect on hover */
 .container2 ul li:hover div::before  {
   scale: 1.1;
   transition: 1.5s ease-in;
@@ -1699,6 +1752,9 @@ ul.social-icons li:hover {
     list-style-type: none;
   
   }
+.tag {
+  margin-bottom: 4rem;
+}
 
 }
 
@@ -1707,7 +1763,8 @@ ul.social-icons li:hover {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
     list-style-type: none;
@@ -1726,7 +1783,7 @@ ul.social-icons li:hover {
   
   .container1 {
     margin: 0 auto;
-    padding: 80% 0 0 0 ;
+    padding: 10% 0 0 0 ;
   }
 
   .tag {
@@ -1748,17 +1805,67 @@ ul.social-icons li:hover {
     position: absolute;
     top: -10px;
     left: -10px;
-    width: 170px; /* Adjust based on image size + border */
-    height: 170px; /* Adjust based on image size + border */
+    width: 170px; 
+    height: 170px; 
     border: 5px solid #7D2D49;
     border-radius: 50%;
     box-sizing: border-box;
     transition: transform 0.5s ease;
-    z-index: 0; /* Ensure ring is below the image */
+    z-index: 0; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  
+  .scale-up {
+    transform: scale(1.1);
+  }
 }
   
 
 
+/* our ways */
+
+.cards {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 350px;
+  /* min-width: 250; */
+  height: 350px;;
+  transition: transform 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-18px);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: 'Museo Sans Rounded 500';
+  line-height: 1.5;
+}
+
+.cards.ourways-box h2.card-title {
+  color: #ffb607;
+  font-size: 22px;
+}
+
+@media (max-width: 1024px){
+  /* .ways {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+  .ways .col-md-4 {
+    flex: 1 1 calc(50% - 20px);
+  } */
+ 
+}
