@@ -1,297 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TableTalk</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel=""
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css"
+      integrity="sha512-gb3xyfj/FrHtphPVLYaKBZ8WyMYEXD1+Cgt3FiKhFmbN2UuOpite2w1Lgmw6NzfsNmMGX+BbVra4ceV95z9Vaw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery.min.js"
+    ></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TableTalk</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css"
-    integrity="sha512-gb3xyfj/FrHtphPVLYaKBZ8WyMYEXD1+Cgt3FiKhFmbN2UuOpite2w1Lgmw6NzfsNmMGX+BbVra4ceV95z9Vaw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-</head>
+  <body>
+    <!-- Menu -->
+    <div class="menu">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <ion-icon name="grid-outline"></ion-icon>
+        </label>
 
-<body>
-  <!-- Menu -->
-  <div class="menu">
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <ion-icon name="grid-outline"></ion-icon>
-      </label>
+        <label class="logo"
+          ><img src="./images/logo_main.jpg" class="logo" style="width: 75px"
+        /></label>
+        <ul class="main_navbar">
+          <li>
+            <a href="#hero-section" class="active" onclick="closeMenu()"
+              >Home</a
+            >
+          </li>
+          <li><a href="#about" onclick="closeMenu()">About us</a></li>
+          <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+          <li><a href="#team" onclick="closeMenu()">Brand's</a></li>
+          <li><a href="#form" onclick="closeMenu()">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End Menu -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+        </div>
+        <div class="item">
+          <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+        </div>
+        <div class="item">
+          <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+        </div>
+        <div class="item">
+          <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+        </div>
+        <div class="item">
+          <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+        </div>
+        <div class="item">
+          <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+        </div>
+      </div>
+      <!-- Left and right controls -->
+    </div>
+    <!-- About -->
+    <div class="section" id="about">
+      <div class="container flex franchise">
+        <div class="visual">
+          <img src="./images/about_us.png" alt="" />
+        </div>
+        <div class="text">
+          <div class="secondary">About Our Franchise</div>
+          <h2 class="primary">150+</h2>
 
-      <label class="logo"><img src="./images/logo_main.jpg" class="logo" style="width: 75px;"></label>
-      <ul class="main_navbar">
-        <li><a href="#hero-section" class="active" onclick="closeMenu()">Home</a></li>
-        <li><a href="#about" onclick="closeMenu()">About us</a></li>
-        <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
-        <li><a href="#team" onclick="closeMenu()">Brand's</a></li>
-        <li><a href="#form" onclick="closeMenu()">Contact us</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- End Menu -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="./images/05.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./images/03.jpg" alt="Chicago" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./images/01.jpg" alt="New york" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./images/02.jpg" alt="New york" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./images/06.jpg" alt="New york" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./images/04.jpg" alt="New york" style="width:100%;">
+          <h3 class="tertiary">Our Delicious Food</h3>
+
+          <p>
+            Looking for the next big thing in food? You just found it. We curate
+            and cultivate the honest, mouthwatering food brands of tomorrow,
+            TODAY. Our dine-in food mall serves food that’s good for you, good
+            for the planet, and good for your soul. So, let’s taste the future
+            today. It’s deliciously sustainable.
+          </p>
+        </div>
       </div>
     </div>
-    <!-- Left and right controls -->
-  </div>
-  <!-- About -->
-  <div class="section" id="about">
-    <div class="container flex franchise">
-      <div class="visual">
-        <img src="./images/about_us.png" alt="" />
-      </div>
-      <div class="text">
-        <div class="secondary">About Our Franchise</div>
-        <h2 class="primary">150+</h2>
+    <!-- End About -->
 
-        <h3 class="tertiary">Our Delicious Food</h3>
+    <!-- Our Ways section -->
+    <div class="container flex section pt-6">
+      <div class="container">
+        <h2 class="secondary">Our Ways</h2>
+        <div class="row ways">
+          <div class="col-md-4">
+            <div class="cards ourways-box">
+              <h1 class="ourways-title">01</h1>
+              <h2 class="card-title">Food Philosophy</h2>
+              <p class="card-paragraph">
+                No mystery meals here, just pure, flavourful innovation. We
+                craft food that’s as exciting as the future.
+              </p>
+            </div>
+          </div>
 
-        <p>
-          Looking for the next big thing in food? You just found it. We curate and cultivate the honest, mouthwatering
-          food brands of tomorrow,
-          TODAY. Our dine-in food mall serves food that’s good for you, good for the planet, and good for your soul.
-          So, let’s taste the future today. It’s deliciously sustainable.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End About -->
- 
+          <div class="col-md-4">
+            <div class="cards ourways-box">
+              <h1 class="ourways-title">02</h1>
+              <h2 class="card-title">Sustainability</h2>
+              <p class="card-paragraph">
+                We bring you seasonal flavours, knowing your food journeyed
+                responsibly and supporting local heroes. Every aspect of our
+                operations is rooted in a commitment to environmental
+                protection.
+              </p>
+            </div>
+          </div>
 
-
-<!-- Our Ways section -->
-<div class="container flex section pt-6">
-  <div class="container">
-     <h2 class="secondary">Our Ways</h2>
-      <div class="row ways">
-        <div class="col-md-4">
-          <div class="cards ourways-box">
-            <h1 class="ourways-title">01</h1>
-            <h2 class="card-title">Food Philosophy</h2>
-            <p class="card-paragraph">No mystery meals here, just pure, flavourful innovation. We craft food that’s as exciting as the future.</p>
+          <div class="col-md-4">
+            <div class="cards ourways-box">
+              <h1 class="ourways-title">03</h1>
+              <h2 class="card-title">Sourcing</h2>
+              <p class="card-paragraph">
+                We believe that great food starts with great ingredients. That’s
+                why we go to great lengths to source the finest and freshest
+                food for you from trusted partners around the world.
+              </p>
+            </div>
           </div>
         </div>
-  
-        <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-4">
             <div class="cards ourways-box">
-                <h1 class="ourways-title">02</h1>
-                <h2 class="card-title">Sustainability</h2>
-                <p class="card-paragraph">We bring you seasonal flavours, knowing your food journeyed responsibly and supporting local heroes. Every aspect of our operations is rooted in a commitment to environmental protection.
-                </p>
+              <h1 class="ourways-title">04</h1>
+              <h2 class="card-title">Quality Products</h2>
+              <p class="card-paragraph">
+                When you demand the best, you deserve nothing less. Every
+                product that graces our shelves is hand-selected for its
+                exceptional taste, texture, and purity.
+              </p>
             </div>
-         </div>
-  
-        <div class="col-md-4">
-          <div class="cards ourways-box">
-            <h1 class="ourways-title">03</h1>
-            <h2 class="card-title">Sourcing</h2>
-            <p class="card-paragraph">We believe that great food starts with great ingredients. That’s why we go to great lengths to source the finest and freshest food for you from trusted partners around the world. 
+          </div>
+
+          <div class="col-md-4">
+            <div class="cards ourways-box">
+              <h1 class="ourways-title">05</h1>
+              <h2 class="card-title">Our Purpose</h2>
+              <p class="card-paragraph">
+                We believe in flavour-forward food that doesn’t cost the earth
+                (literally). We envision a world where incredible, sustainable
+                food experiences are accessible to everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Our Ways section -->
+
+    <!-- key hilights -->
+    <div class="section pt-6">
+      <h2 class="secondary">Great Reason to Partner with</h2>
+      <div class="slider--teams">
+        <section class="service-categories text-xs-center">
+          <div class="container">
+            <div class="row reasons">
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/1.png" />
+                    <h4 class="card-title">Quick ROI with 12-15 Month</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/2.png" />
+                    <h4 class="card-title">Low Investment</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/3.png" />
+                    <h4 class="card-title">Marketing & Sales Strategy</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/4.png" />
+                    <h4 class="card-title">Day to Day Operation Support</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/5.png" />
+                    <h4 class="card-title">Supply & Distribution</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/6.png" />
+                    <h4 class="card-title">
+                      It Infrastructure & Licensing & Intellectual Property
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/7.png" />
+                    <h4 class="card-title">HR Management with Training</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card service-card card-inverse">
+                  <div class="card-block">
+                    <img class="circle" alt="2" src="./images/IconKey/8.png" />
+                    <h4 class="card-title">
+                      Selection of Location & Setup of Outlet
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Row-->
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- key hilights -->
+
+    <!-- FAQ -->
+    <div class="section" id="faq">
+      <h2 class="secondary">Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <details>
+          <summary>what is Food Philosophy?</summary>
+          <div class="content">
+            <p>
+              No mystery meals here, just pure, flavourful innovation. We craft
+              food that’s as exciting as the future.
             </p>
           </div>
-        </div>
-        </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="cards ourways-box">
-                <h1 class="ourways-title">04</h1>
-                <h2 class="card-title">Quality Products</h2>
-                <p class="card-paragraph">When you demand the best, you deserve nothing less. Every product that graces our shelves is hand-selected for its exceptional taste, texture, and purity. </p>
-            </div>
-        </div>
-        
-        
-        <div class="col-md-4">
-            <div class="cards ourways-box">
-                <h1 class="ourways-title">05</h1>
-                <h2 class="card-title">Our Purpose</h2>
-                <p class="card-paragraph">We believe in flavour-forward food that doesn’t cost the earth (literally). We envision a world where incredible, sustainable food experiences are accessible to everyone. </p>
-            </div>
-        </div>
-        
-        </div>
-    </div>
-</div>
+        </details>
 
-<!-- End Our Ways section -->
-
-
-
-
-  <!-- key hilights -->
-  <div class="section pt-6">
-    <h2 class="secondary">Great Reason to Partner with </h2>
-    <div class="slider--teams">
-      <section class="service-categories text-xs-center">
-        <div class="container">
-          <div class="row reasons">
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/1.png">
-                  <h4 class="card-title">Quick ROI
-                    with 12-15 Month</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/2.png">
-                  <h4 class="card-title">Low
-                    Investment</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/3.png">
-                  <h4 class="card-title">Marketing
-                    & Sales Strategy</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/4.png">
-                  <h4 class="card-title">Day to Day
-                    Operation Support</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/5.png">
-                  <h4 class="card-title">Supply
-                    & Distribution</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse ">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/6.png">
-                  <h4 class="card-title">It Infrastructure & Licensing
-                    & Intellectual Property</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/7.png">
-                  <h4 class="card-title">HR Management
-                    with Training</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card service-card card-inverse">
-                <div class="card-block">
-                  <img class="circle" alt="2" src="./images/IconKey/8.png">
-                  <h4 class="card-title">Selection of Location
-                    & Setup of Outlet</h4>
-                </div>
-              </div>
-            </div>
+        <details>
+          <summary>what is Sustainability?</summary>
+          <div class="content">
+            <p>
+              We bring you seasonal flavours, knowing your food journeyed
+              responsibly and supporting local heroes. Every aspect of our
+              operations is rooted in a commitment to environmental protection.
+            </p>
           </div>
-          <!--End Row-->
-        </div>
-      </section>
+        </details>
+
+        <details>
+          <summary>what is Sourcing?</summary>
+          <div class="content">
+            <p>
+              We believe that great food starts with great ingredients. That’s
+              why we go to great lengths to source the finest and freshest food
+              for you from trusted partners around the world.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>what is Quality Products?</summary>
+          <div class="content">
+            <p>
+              When you demand the best, you deserve nothing less. Every product
+              that graces our shelves is hand-selected for its exceptional
+              taste, texture, and purity.
+            </p>
+          </div>
+        </details>
+      </div>
     </div>
-  </div>
-  <!-- key hilights -->
-
-  <!-- FAQ -->
-  <div class="section" id="faq">
-    <h2 class="secondary">Frequently Asked Questions</h2>
-
-    <div class="faq">
-      <details>
-        <summary>what is Food Philosophy?</summary>
-        <div class="content">
-          <p>
-            No mystery meals here, just pure, flavourful innovation. We craft food that’s as exciting as the future.
-          </p>
-        </div>
-      </details>
-
-      <details>
-        <summary>what is Sustainability?</summary>
-        <div class="content">
-          <p>
-            We bring you seasonal flavours, knowing your food journeyed responsibly and supporting local heroes. Every
-            aspect of our operations is rooted in a commitment to environmental protection.
-          </p>
-        </div>
-      </details>
-
-      <details>
-        <summary>what is Sourcing?</summary>
-        <div class="content">
-          <p>
-            We believe that great food starts with great ingredients. That’s why we go to great lengths to source the
-            finest and freshest food for you from trusted partners around the world.
-          </p>
-        </div>
-      </details>
-
-      <details>
-        <summary>what is Quality Products?</summary>
-        <div class="content">
-          <p>
-            When you demand the best, you deserve nothing less. Every product that graces our shelves is hand-selected
-            for its exceptional taste, texture, and purity.
-          </p>
-        </div>
-      </details>
-    </div>
-  </div>
-  <!-- End FAQ -->
-  <!--  team -->
-  <!-- <div class="section pt-6" id="team">
+    <!-- End FAQ -->
+    <!--  team -->
+    <!-- <div class="section pt-6" id="team">
     <h2 class="secondary">Our Brand's</h2>
     <div class="slider--teams">
       <div class="container">
@@ -355,219 +391,498 @@
     </div>
   </div> -->
 
-<div class="container1">
-  <h2 class="tag">Our Brand's</h2>
-  <div class="container2">
-    <ul id="brand-list">
-<li>
-  <div>
-    <img src="./images/BurgerLogo.jpg" alt="Burger">
-    <h3>Burger</h3>
-  </div>
-</li>
-<li>
-  <div>
-    <img src="./images/Meallogo.jpg" alt="Beeji De Meals">
-    <h3>Beeji De Meals</h3>
-  </div>
-</li>
-<li>
-  <div>
-    <img src="./images/VandanamLogo.jpg" alt="Vandanam">
-    <h3>Vandanam</h3>
-  </div>
-</li>
-<li>
-  <div>
-    <img src="./images/YehHaiMumbaiMeriJaanLogo.jpg" alt="Yeh Hai Mumbai Meri Jaan">
-    <h3>Yeh Hai Mumbai Meri Jaan</h3>
-  </div>
-</li>
-<li>
-  <div>
-    <img src="./images/OverloadedWafflelogotype.png" alt="Over loaded Waffle">
-    <h3>Over loaded Waffle</h3>
-  </div>
-</li>
-<li>
-  <div>
-    <img src="./images/BobaBlastLogo.jpg" alt="Boba Blast">
-    <h3>Boba Blast</h3>
-  </div>
-</li>
-    </ul>
-  </div>  
+    <!-- bootstrap -->
+    <!-- Button trigger modal -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#exampleModalCenter"
+    >
+      Launch demo modal
+    </button> -->
 
-</div>
+    <!-- Modal -->
+    <!-- modal 1 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+        style="width: 50%; margin-top: 274px"
+      >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;❌</span>
+              </button>
+              <div class="des">
+                <img src="./images/BurgerLogo.jpg" alt="" />
 
-
-  <div class="section scroll-area" id="section7">
-    <div class="ms-main-content ms-career-page d-flex align-items-center">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ms-hero-box">
-              <h2 class="mb-4 contact-title">CONTACT <span class="ms-site-color">US</span></h2>
-              <form class="ms-contact-form" method="POST" action="index.php.html#section7">
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <!-- <p class="ms-succes-msg"></p> -->
-                    <!-- <p clas="ms-error-msg"></p> -->
-                  </div>
-                  <div class="form-group col-md-6 pr-md-2 pr-lg-3">
-                    <label for="inputname">NAME*</label>
-                    <input type="text" placeholder="Enter Name" name="name" class="form-control" id="inputname"
-                      required>
-                  </div>
-                  <div class="form-group col-md-6 pl-md-2 pl-lg-3">
-                    <label for="inputemail">EMAIL ID*</label>
-                    <input type="email" name="email" placeholder="Enter Email ID" class="form-control" id="inputemail"
-                      required>
-                  </div>
-                  <div class="form-group col-md-6 pr-md-2 pr-lg-3">
-                    <label for="inputphone">PHONE NUMBER*</label>
-                    <input type="tel" name="phone" placeholder="Enter Phone Number" class="form-control" id="inputphone"
-                      required>
-                  </div>
-                  <div class="form-group col-md-6 pl-md-2 pl-lg-3">
-                    <label for="inputcompany">SUBJECT*</label>
-                    <input type="text" name="company" placeholder="Enter Subject" class="form-control" id="inputcompany"
-                      required>
-                  </div>
-                  <div class="form-group col-md-12"></div>
-                  <div class="form-group col-md-12">
-                    <label for="inputmessage">MESSAGE*</label>
-                    <textarea rows="3" name="message" placeholder="Enter Your Message" class="form-control"
-                      id="inputmessage" required></textarea>
-                  </div>
+                <div class="info">
+                  <h3 class="name">
+                    BOBA BLAST: BUBBLE LOVE BONDING WITH THE BLAST
+                  </h3>
+                  <p>
+                    Take our BOBA BLAST flight as we are serving the Gen Z
+                    revolution in a cup. We bring you next-level boba that’s as
+                    good as you as it is for the gram.
+                  </p>
                 </div>
-                <button type="submit" name="submit" class="btn ms-btn mt-2 d-block ml-auto my-buttons">Submit
-                  Message</button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer-section">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="widget company-intro-widget">
-              <a href="index.html" class="site-logo"><img src="./images/logo_main.jpg" class="logo"
-                  style="width: 70px;"></a>
-              <p>High revenue with min resource & low investment</p>
-              <!-- <ul class="company-footer-contact-list">
-                <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</li>
-              </ul> -->
+    <!-- modal 2 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+        style="width: 50%; margin-top: 274px"
+      >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;❌</span>
+              </button>
+              <img src="./images/Meallogo.jpg" alt="" />
             </div>
-          </div><!-- widget end -->
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="widget newsletter-widget">
-              <h5 class="widget-title">Follow Us</h5>
-              <ul class="social-icons">
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-x-twitter"></i></li>
-                <li><i class="fa-brands fa-youtube"></i></li>
-              </ul>
-              <ul class="company-footer-contact-list">
-                <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</li>
-              </ul>
-            </div>
-          </div><!-- widget end -->
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 text-sm-center text-center">
-            <span class="copy-right-text">© 2024 <a href="https://codepen.io/anupkumar92">❤️ Createdinam</a> All Rights
-              Reserved.</span>
-          </div> 
+
+    <!-- modal 3 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+        style="width: 50%; margin-top: 274px"
+      >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;❌</span>
+              </button>
+              <img src="./images/VandanamLogo.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-    </div><!-- footer-bottom end -->
-  </footer>
+    </div>
 
-  <!--   BTN   -->
-  <!-- End Footer -->
+    <!-- modal 4 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+        style="width: 50%; margin-top: 274px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;❌</span>
+              </button>
+              <img src="./images/YehHaiMumbaiMeriJaanLogo.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Ion Icons Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
-    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-  <script>
-    // document.addEventListener("DOMContentLoaded", function () {
-    //   class TeamSlide {
-    //     constructor() {
-    //       this.teamData = document.querySelectorAll(".team-data");
-    //       this.index = 0;
-    //       this.slide();
-    //     }
+    <!-- modal 5 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter5"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+        style="width: 50%; margin-top: 274px"
+      >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;❌</span>
+              </button>
+              <img src="./images/OverloadedWafflelogotype.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    //     slide() {
-    //       setInterval(() => {
-    //         if (this.teamData.length === 0) {
-    //           return;
-    //         }
+    <!-- modal 6 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter6"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+        style="width: 50%; margin-top: 274px"
+      >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;❌</span>
+              </button>
+              <img src="./images/BobaBlastLogo.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    //         this.teamData[this.index].classList.remove('team-data-activate');
+    <div class="container1">
+      <h2 class="tag">Our Brand's</h2>
+      <div class="container2">
+        <ul id="brand-list">
+          <li>
+            <div data-toggle="modal" data-target="#exampleModalCenter1">
+              <!-- added data-...  -->
+              <img src="./images/BurgerLogo.jpg" alt="Burger" />
+              <h3>Burger</h3>
+            </div>
+          </li>
+          <li>
+            <div data-toggle="modal" data-target="#exampleModalCenter2">
+              <img src="./images/Meallogo.jpg" alt="Beeji De Meals" />
+              <h3>Beeji De Meals</h3>
+            </div>
+          </li>
+          <li>
+            <div data-toggle="modal" data-target="#exampleModalCenter3">
+              <img src="./images/VandanamLogo.jpg" alt="Vandanam" />
+              <h3>Vandanam</h3>
+            </div>
+          </li>
+          <li>
+            <div data-toggle="modal" data-target="#exampleModalCenter4">
+              <img
+                src="./images/YehHaiMumbaiMeriJaanLogo.jpg"
+                alt="Yeh Hai Mumbai Meri Jaan"
+              />
+              <h3>Yeh Hai Mumbai Meri Jaan</h3>
+            </div>
+          </li>
+          <li>
+            <div data-toggle="modal" data-target="#exampleModalCenter5">
+              <img
+                src="./images/OverloadedWafflelogotype.png"
+                alt="Over loaded Waffle"
+              />
+              <h3>Over loaded Waffle</h3>
+            </div>
+          </li>
+          <li>
+            <div data-toggle="modal" data-target="#exampleModalCenter6">
+              <img src="./images/BobaBlastLogo.jpg" alt="Boba Blast" />
+              <h3>Boba Blast</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    //         this.index++;
+    <div class="section scroll-area" id="section7">
+      <div class="ms-main-content ms-career-page d-flex align-items-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="ms-hero-box">
+                <h2 class="mb-4 contact-title">
+                  CONTACT <span class="ms-site-color">US</span>
+                </h2>
+                <form
+                  class="ms-contact-form"
+                  method="POST"
+                  action="index.php.html#section7"
+                >
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <!-- <p class="ms-succes-msg"></p> -->
+                      <!-- <p clas="ms-error-msg"></p> -->
+                    </div>
+                    <div class="form-group col-md-6 pr-md-2 pr-lg-3">
+                      <label for="inputname">NAME*</label>
+                      <input
+                        type="text"
+                        placeholder="Enter Name"
+                        name="name"
+                        class="form-control"
+                        id="inputname"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-md-6 pl-md-2 pl-lg-3">
+                      <label for="inputemail">EMAIL ID*</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email ID"
+                        class="form-control"
+                        id="inputemail"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-md-6 pr-md-2 pr-lg-3">
+                      <label for="inputphone">PHONE NUMBER*</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter Phone Number"
+                        class="form-control"
+                        id="inputphone"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-md-6 pl-md-2 pl-lg-3">
+                      <label for="inputcompany">SUBJECT*</label>
+                      <input
+                        type="text"
+                        name="company"
+                        placeholder="Enter Subject"
+                        class="form-control"
+                        id="inputcompany"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-md-12"></div>
+                    <div class="form-group col-md-12">
+                      <label for="inputmessage">MESSAGE*</label>
+                      <textarea
+                        rows="3"
+                        name="message"
+                        placeholder="Enter Your Message"
+                        class="form-control"
+                        id="inputmessage"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="btn ms-btn mt-2 d-block ml-auto my-buttons"
+                  >
+                    Submit Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="widget company-intro-widget">
+                <a href="index.html" class="site-logo"
+                  ><img
+                    src="./images/logo_main.jpg"
+                    class="logo"
+                    style="width: 70px"
+                /></a>
+                <p>High revenue with min resource & low investment</p>
+                <!-- <ul class="company-footer-contact-list">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</li>
+              </ul> -->
+              </div>
+            </div>
+            <!-- widget end -->
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="widget newsletter-widget">
+                <h5 class="widget-title">Follow Us</h5>
+                <ul class="social-icons">
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-linkedin"></i></li>
+                  <li><i class="fa-brands fa-x-twitter"></i></li>
+                  <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+                <ul class="company-footer-contact-list">
+                  <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i
+                    >&nbsp;&nbsp;+91 94097 86777
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i
+                    >&nbsp;&nbsp;contact@tabletalk.in
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- widget end -->
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-sm-center text-center">
+              <span class="copy-right-text"
+                >© 2024
+                <a href="https://codepen.io/anupkumar92">❤️ Createdinam</a> All
+                Rights Reserved.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom end -->
+    </footer>
 
-    //         if (this.index > this.teamData.length - 1) {
-    //           this.index = 0;
-    //         }
+    <!--   BTN   -->
+    <!-- End Footer -->
 
-    //         this.teamData[this.index].classList.add('team-data-activate');
+    <!-- Ion Icons Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   class TeamSlide {
+      //     constructor() {
+      //       this.teamData = document.querySelectorAll(".team-data");
+      //       this.index = 0;
+      //       this.slide();
+      //     }
 
+      //     slide() {
+      //       setInterval(() => {
+      //         if (this.teamData.length === 0) {
+      //           return;
+      //         }
 
-    //       }, 3000);
-    //     }
-    //   }
-    //   new TeamSlide();
-    // });
+      //         this.teamData[this.index].classList.remove('team-data-activate');
 
-    function closeMenu() {
-      document.getElementById('check').checked = false;
-    }
+      //         this.index++;
 
+      //         if (this.index > this.teamData.length - 1) {
+      //           this.index = 0;
+      //         }
 
+      //         this.teamData[this.index].classList.add('team-data-activate');
 
-    document.addEventListener('DOMContentLoaded', () => {
-  const listItems = document.querySelectorAll('#brand-list li');
-  let currentIndex = 0;
+      //       }, 3000);
+      //     }
+      //   }
+      //   new TeamSlide();
+      // });
 
-  function scaleNextItem() {
-    listItems.forEach(item => {
-      item.classList.remove('scale-up');
-    });
+      function closeMenu() {
+        document.getElementById("check").checked = false;
+      }
 
-    listItems[currentIndex].classList.add('scale-up');
+      document.addEventListener("DOMContentLoaded", () => {
+        const listItems = document.querySelectorAll("#brand-list li");
+        let currentIndex = 0;
 
-    currentIndex = (currentIndex + 1) % listItems.length;
+        function scaleNextItem() {
+          listItems.forEach((item) => {
+            item.classList.remove("scale-up");
+          });
 
-    setTimeout(scaleNextItem, 3000);
-  }
+          listItems[currentIndex].classList.add("scale-up");
 
-  scaleNextItem();
-});
+          currentIndex = (currentIndex + 1) % listItems.length;
 
+          setTimeout(scaleNextItem, 3000);
+        }
 
-
-  </script>
-</body>
-
+        scaleNextItem();
+      });
+    </script>
+  </body>
 </html>

@@ -1857,15 +1857,25 @@ ul.social-icons li:hover {
   font-size: 22px;
 }
 
-@media (max-width: 1024px){
-  /* .ways {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3rem;
-  }
-  .ways .col-md-4 {
-    flex: 1 1 calc(50% - 20px);
-  } */
- 
+/* Modals */
+
+
+
+.modal-body img {
+  max-width: 200px;
+  border-radius: 20px;
 }
+
+
+@media (max-width: 480px) {
+  .modal-content{
+    width:279px
+  }
+}
+
+
+.des {
+  display: flex;
+  gap: 5%;
+}
+
