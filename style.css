@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
 
+
+
+@font-face {
+  font-family: 'GothamBold'; 
+  src: url('./fonts/GothamBold.ttf') format('ttf'); 
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Poppins_medium'; 
+  src: url('./fonts/Poppins-Medium.ttf') format('ttf'); 
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Poppins_regular'; 
+  src: url('./fonts/poppins.regular.ttf') format('ttf'); 
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Stigma'; 
+  src: url('./fonts/Stigma_Display_Typeface.otf') format('otf'); 
+  font-weight: normal;
+  font-style: normal; 
+}
+
+
+
+
+
 /* Base */
 :root {
   --clr-primary: #fe5722;
@@ -151,10 +184,18 @@ main {
 }
 
 .secondary {
+  font-family: Stigma ;
   font-size: 44px;
   font-weight: 700;
-  text-align: center;
   margin-bottom: 80px;
+  text-align: center;
+}
+
+.text h2, h3 {
+  font-family: GothamBold;
+}
+.text p {
+  font-family: Poppins_regular;
 }
 
 .tertiary {
@@ -162,6 +203,9 @@ main {
   font-weight: 400;
   margin-bottom: 20px;
 }
+
+
+
 
 .btn {
   padding: 14px 20px;
@@ -546,6 +590,7 @@ img {
 
 .company-footer-contact-list {
   margin-top: 10px;
+
 }
 
 .company-footer-contact-list li {
@@ -564,6 +609,11 @@ img {
   display: inline-block;
 }
 
+.company-footer-contact-list li, .copy-right-text{
+  font-family: Poppins_regular;
+
+}
+
 .footer-top .site-logo {
   margin-bottom: 25px;
   display: block;
@@ -574,9 +624,13 @@ img {
   text-transform: capitalize;
 }
 
+.widget p{
+  font-family: Poppins_regular;
+}
 .footer-top .widget-title {
   color: #ffffff;
   margin-bottom: 40px;
+  font-family: GothamBold;
 }
 
 .courses-link-list li+li {
@@ -848,6 +902,7 @@ img {
 
   .secondary {
     font-size: 32px;
+    text-align: center !important;
   }
 
   .tertiary {
@@ -1493,7 +1548,7 @@ a:hover {
 
 /*----- Contact Us Page -----*/
 .ms-contact-form label {
-  font-family: 'Museo Sans Rounded 500';
+  font-family: GothamBold;
   font-size: 17px;
   color: #ffff;
   letter-spacing: 2.5px;
@@ -1512,12 +1567,16 @@ a:hover {
   border: 1px solid #FC883E;
   box-shadow: none;
 }
-
+.form-group {
+  font-family: GothamBold;
+}
 .ms-contact-form ::placeholder {
   color: rgba(0, 0, 2, 0.5);
   font-size: 16px;
-  font-family: 'Museo Sans Rounded 300';
+  font-family: 'Poppins_regular';
 }
+
+
 
 .ms-contact-form select {
   color: rgba(0, 0, 2, 0.5);
@@ -1536,6 +1595,10 @@ select {
 .contact-title {
   font-weight: 900;
   color: #fff;
+  font-family: Stigma;
+}
+.ms-contact-form {
+  font-family: GothamBold;
 }
 
 .my-buttons {
@@ -1654,7 +1717,15 @@ ul.social-icons li:hover {
 }
 
 
+.tag {
+  font-family: Stigma;
 
+
+}
+
+#brand-list h3 {
+  font-family: GothamBold;
+}
 
 .container1  .tag {
   text-align: center;
@@ -1682,14 +1753,15 @@ ul.social-icons li:hover {
 }
 
 .container2 ul {
-  margin: 0 auto;
+  margin: 0 43px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   list-style-type: none;
-
+  gap: 6rem;
 }
+
 
 
 .container2 ul li {
@@ -1700,6 +1772,17 @@ ul.social-icons li:hover {
   margin-bottom: 30px;
  }
  
+@media (min-width:1025px) {
+ .container2 ul li:nth-child(6)  {
+    margin-left: 300px;
+ }
+ .container2 ul li:nth-child(8)  {
+  margin-right: 300px;
+}
+
+
+
+}
  .container2 ul li div {
   position: relative;
 }
@@ -1831,10 +1914,15 @@ ul.social-icons li:hover {
   margin: 10px;
   max-width: 350px;
   /* min-width: 250; */
-  height: 350px;;
+  height: 370px;;
   transition: transform 0.3s ease;
 }
 
+@media (max-width:1024px) {
+  .cards {
+    height: 403px;
+  }
+}
 .cards:hover {
   transform: translateY(-18px);
 }
@@ -1843,12 +1931,13 @@ ul.social-icons li:hover {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: GothamBold;
 }
 
 .card-paragraph {
   font-size: 16px;
   margin-bottom: 0;
-  font-family: 'Museo Sans Rounded 500';
+  font-family: 'Poppins_regular' Museo Sans Rounded 500;
   line-height: 1.5;
 }
 
@@ -1859,23 +1948,85 @@ ul.social-icons li:hover {
 
 /* Modals */
 
+.name {
+  font-family: GothamBold;
+}
+.name p {
+  font-family: Poppins_regular;
+}
+  
+  .modal-header img {
+    max-width: 150px;
+    margin: 5% auto;
+    border-radius: 20px;
+  }
 
 
-.modal-body img {
-  max-width: 200px;
-  border-radius: 20px;
+
+  .des {
+    display: flex;
+    gap: 5%;
+    text-align: center;  /* not including is better*/
+  }
+
+  .modal-body {
+    margin-top: -23px;
+  }
+
+@media (max-width: 1024px) {
+ .modal .modal-dialog {
+  max-width: 90%;
+  width: 759px;
 }
 
-
-@media (max-width: 480px) {
-  .modal-content{
-    width:279px
+@media (min-width: 768px) {
+  .modal-dialog {
+      width: 80%;
   }
 }
 
 
-.des {
-  display: flex;
-  gap: 5%;
+
+@media (max-width: 400px) {
+  .modal .modal-dialog {
+    max-width: 80%;
+  }
+  .modal-content{
+    width:100%;
+  }
+
+  .modal-header img {
+    max-width: 150px;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .des {
+    display: flex;
+    flex-direction: column;
+  }
+.des h3 {
+  font-size: 15px;
+  text-align: center;
+}
+.des p {
+  font-size: 13px;
+  text-align: center;
 }
 
+}
+
+
+
+.modal-content {
+  width: 100%;
+}
+}
+
+.close {
+  z-index: 999;
+}
+
+.modal-header  {
+  border: none;
+}
