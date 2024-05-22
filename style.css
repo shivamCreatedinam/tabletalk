@@ -187,7 +187,7 @@ main {
   font-family: Stigma ;
   font-size: 44px;
   font-weight: 700;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -1834,7 +1834,7 @@ ul.social-icons li:hover {
     gap: 100px;
     list-style-type: none;
   
-  }
+  } 
 .tag {
   margin-bottom: 4rem;
 }
@@ -2029,4 +2029,30 @@ ul.social-icons li:hover {
 
 .modal-header  {
   border: none;
+}
+
+/* extra css */
+.aboutUsContainer {
+  text-align: left;
+}
+
+a.socialIconCustom {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Change the direction of the transition. */
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
 }

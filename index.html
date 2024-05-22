@@ -1,323 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TableTalk</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel=""
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css"
-      integrity="sha512-gb3xyfj/FrHtphPVLYaKBZ8WyMYEXD1+Cgt3FiKhFmbN2UuOpite2w1Lgmw6NzfsNmMGX+BbVra4ceV95z9Vaw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery.min.js"
-    ></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  </head>
 
-  <body>
-    <!-- Menu -->
-    <div class="menu">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <ion-icon name="grid-outline"></ion-icon>
-        </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TableTalk</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css"
+    integrity="sha512-gb3xyfj/FrHtphPVLYaKBZ8WyMYEXD1+Cgt3FiKhFmbN2UuOpite2w1Lgmw6NzfsNmMGX+BbVra4ceV95z9Vaw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
 
-        <label class="logo"
-          ><img src="./images/logo_main.jpg" class="logo" style="width: 75px"
-        /></label>
-        <ul class="main_navbar">
-          <li>
-            <a href="#hero-section" class="active" onclick="closeMenu()"
-              >Home</a
-            >
-          </li>
-          <li><a href="#about" onclick="closeMenu()">About us</a></li>
-          <!-- <li><a href="#faq" onclick="closeMenu()">FAQ</a></li> -->
-          <li><a href="#team" onclick="closeMenu()">Brand's</a></li>
-          <li><a href="#form" onclick="closeMenu()">Contact us</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- End Menu -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="5" class="active"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item">
-          <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-        </div>
-        <div class="item">
-          <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-        </div>
-        <div class="item">
-          <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-        </div>
-        <div class="item">
-          <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-        </div>
-        <div class="item">
-          <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-        </div>
-        <div class="item active">
-          <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-        </div>
+<body>
+  <!-- Menu -->
+  <div class="menu">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <ion-icon name="grid-outline"></ion-icon>
+      </label>
+
+      <label class="logo"><img src="./images/logo_main.jpg" class="logo" style="width: 75px" /></label>
+      <ul class="main_navbar">
+        <li>
+          <a href="#hero-section" class="active" onclick="closeMenu()">Home</a>
+        </li>
+        <li><a href="#about" onclick="closeMenu()">About us</a></li>
+        <li><a href="#team" onclick="closeMenu()">Brand's</a></li>
+        <li><a href="#Reason" onclick="closeMenu()">Reason</a></li>
+        <li><a href="#OurWays" onclick="closeMenu()">Our Ways</a></li>
+        <li><a href="#section7" onclick="closeMenu()">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End Menu -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="5" class="active"></li>
+    </ol> -->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./images/00.jpg" alt="Los Angeles" style="width:100%;">
       </div>
-      <!-- Left and right controls -->
-    </div>
-    <!-- About -->
-    <div class="section" id="about">
-      <div class="container flex franchise">
-        <div class="visual">
-          <img src="./images/about_us.png" alt="" />
-        </div>
-        <div class="text">
-          <div class="secondary">About Our Franchise</div>
-          <h2 class="primary">150+</h2>
-
-          <h3 class="tertiary">Our Delicious Food</h3>
-
-          <p>
-            Looking for the next big thing in food? You just found it. We curate
-            and cultivate the honest, mouthwatering food brands of tomorrow,
-            TODAY. Our dine-in food mall serves food that’s good for you, good
-            for the planet, and good for your soul. So, let’s taste the future
-            today. It’s deliciously sustainable.
-          </p>
-        </div>
+      <div class="item">
+        <img src="./images/05.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/03.jpg" alt="Chicago" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/01.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/02.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/06.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/04.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/08.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./images/07.jpg" alt="New york" style="width:100%;">
       </div>
     </div>
-    <!-- End About -->
+    <!-- Left and right controls -->
+    <!-- Controls -->
+    <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">&#8592;</span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">&#8594;</span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+  <!-- About -->
+  <div class="section" id="about">
+    <div class="container flex franchise">
+      <div class="visual">
+        <img src="./images/about_us.png" alt="" />
+      </div>
+      <div class="text">
+        <div class="secondary aboutUsContainer">About Table Talk Food Mall</div>
+        <h2 class="primary">150+</h2>
 
-    <!-- Our Ways section -->
-    <div class="container flex section pt-6">
-      <div class="container">
-        <h2 class="secondary">Our Ways</h2>
-        <div class="row ways">
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">01</h1>
-              <h2 class="card-title">Food Philosophy</h2>
-              <p class="card-paragraph">
-                No mystery meals here, just pure, flavourful innovation. We
-                craft food that’s as exciting as the future.
-              </p>
-            </div>
-          </div>
+        <h3 class="tertiary">Our Delicious Food</h3>
 
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">02</h1>
-              <h2 class="card-title">Sustainability</h2>
-              <p class="card-paragraph">
-                We bring you seasonal flavours, knowing your food journeyed
-                responsibly and supporting local heroes. Every aspect of our
-                operations is rooted in a commitment to environmental
-                protection.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">03</h1>
-              <h2 class="card-title">Sourcing</h2>
-              <p class="card-paragraph">
-                We believe that great food starts with great ingredients. That’s
-                why we go to great lengths to source the finest and freshest
-                food for you from trusted partners around the world.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">04</h1>
-              <h2 class="card-title">Quality Products</h2>
-              <p class="card-paragraph">
-                When you demand the best, you deserve nothing less. Every
-                product that graces our shelves is hand-selected for its
-                exceptional taste, texture, and purity.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">05</h1>
-              <h2 class="card-title">Our Purpose</h2>
-              <p class="card-paragraph">
-                We believe in flavour-forward food that doesn’t cost the earth
-                (literally). We envision a world where incredible, sustainable
-                food experiences are accessible to everyone.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">06</h1>
-              <h2 class="card-title">Performance Marketing</h2>
-              <p class="card-paragraph">
-                As a forward-thinking food brand, we embrace innovations at
-                every step. Our mission is not only to satisfy the customers but
-                also to bring the best to the table every time. We work more
-                than increasing sales to enhance the overall customer experience
-                with technology-driven performance marketing.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">07</h1>
-              <h2 class="card-title">Indian Food Factory</h2>
-              <p class="card-paragraph">
-                We bring vast and varied cuisines of India to your plate under
-                one roof. Here, each dish is crafted using authentic ingredients
-                and traditional techniques. This way, we ensure an experience
-                that is as genuine as it is delicious.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="cards ourways-box">
-              <h1 class="ourways-title">08</h1>
-              <h2 class="card-title">Supply Chain with HR Management</h2>
-              <p class="card-paragraph">
-                Say goodbye to the daily hustle of sourcing local ingredients or
-                managing vendor relationships. We harmonise supply chain
-                management with HR support. This ensures that the outlets run
-                like a well-oiled machine.
-              </p>
-            </div>
-          </div>
-        </div>
+        <p>
+          Looking for the next big thing in food? You just found it. We curate
+          and cultivate the honest, mouthwatering food brands of tomorrow,
+          TODAY. Our dine-in food mall serves food that’s good for you, good
+          for the planet, and good for your soul. So, let’s taste the future
+          today. It’s deliciously sustainable.
+        </p>
       </div>
     </div>
+  </div>
+  <!-- End About -->
 
-    <!-- End Our Ways section -->
 
-    <!-- key hilights -->
-    <div class="section pt-6">
-      <h2 class="secondary">Great Reason to Partner with</h2>
-      <div class="slider--teams">
-        <section class="service-categories text-xs-center">
-          <div class="container">
-            <div class="row reasons">
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/1.png" />
-                    <h4 class="card-title">Quick ROI with 12-15 Month</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/2.png" />
-                    <h4 class="card-title">Low Investment</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/3.png" />
-                    <h4 class="card-title">Marketing & Sales Strategy</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/4.png" />
-                    <h4 class="card-title">Day to Day Operation Support</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/5.png" />
-                    <h4 class="card-title">Supply & Distribution</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/6.png" />
-                    <h4 class="card-title">
-                      It Infrastructure & Licensing & Intellectual Property
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/7.png" />
-                    <h4 class="card-title">HR Management with Training</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card service-card card-inverse">
-                  <div class="card-block">
-                    <img class="circle" alt="2" src="./images/IconKey/8.png" />
-                    <h4 class="card-title">
-                      Selection of Location & Setup of Outlet
-                    </h4>
-                  </div>
+  <!-- Our Brands start-->
+  <div id="team" class="container1">
+    <h2 class="tag">Our Brand's</h2>
+    <div class="container2">
+      <ul id="brand-list">
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter1">
+            <img src="./images/BurgerLogo.jpg" alt="Burger" />
+            <h3>Burger</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter2">
+            <img src="./images/Meallogo.jpg" alt="Beeji De Meals" />
+            <h3>Beeji De Meals</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter3">
+            <img src="./images/VandanamLogo.jpg" alt="Vandanam" />
+            <h3>Vandanam</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter4">
+            <img src="./images/YehHaiMumbaiMeriJaanLogo.jpg" alt="Yeh Hai Mumbai Meri Jaan" />
+            <h3>Yeh Hai Mumbai Meri Jaan</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter5">
+            <img src="./images/OverloadedWafflelogotype.png" alt="Over loaded Waffle" />
+            <h3>Over loaded Waffle</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter6">
+            <img src="./images/BobaBlastLogo.jpg" alt="Boba Blast" />
+            <h3>Boba Blast</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter7">
+            <img src="./images/HumTumorTealogo.jpg" alt="Boba Blast" />
+            <h3>Hum Tum or Tea</h3>
+          </div>
+        </li>
+        <li>
+          <div data-toggle="modal" data-target="#exampleModalCenter8">
+            <img src="./images/GupSuplogo.jpg" alt="Boba Blast" />
+            <h3>Gup Sup</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--  Our Brands end-->
+
+  <!-- key hilights -->
+  <div id="Reason" class="section pt-6">
+    <h2 class="secondary">Great Reason to Partner with</h2>
+    <div class="slider--teams">
+      <section class="service-categories text-xs-center">
+        <div class="container">
+          <div class="row reasons">
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/1.png" />
+                  <h4 class="card-title">Quick ROI</h4>
                 </div>
               </div>
             </div>
-            <!--End Row-->
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/2.png" />
+                  <h4 class="card-title">Fully Company Operated Model</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/3.png" />
+                  <h4 class="card-title">Marketing & Sales Strategy</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/4.png" />
+                  <h4 class="card-title">Day to Day Operation Support</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/5.png" />
+                  <h4 class="card-title">Supply & Distribution</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/6.png" />
+                  <h4 class="card-title">
+                    It Infrastructure & Licensing & Intellectual Property
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/7.png" />
+                  <h4 class="card-title">HR Management with Training</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service-card card-inverse">
+                <div class="card-block">
+                  <img class="circle" alt="2" src="./images/IconKey/8.png" />
+                  <h4 class="card-title">
+                    Selection of Location & Setup of Outlet
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-      </div>
+          <!--End Row-->
+        </div>
+      </section>
     </div>
-    <!-- key hilights -->
+  </div>
+  <!-- key hilights -->
 
-    <!-- FAQ -->
-    <!-- <div class="section" id="faq">
+  <!-- FAQ -->
+  <!-- <div class="section" id="faq">
     <h2 class="secondary">Frequently Asked Questions</h2>
 
       <div class="faq">
@@ -364,9 +312,9 @@
       </details>
     </div>
   </div> -->
-    <!-- End FAQ -->
-    <!--  team -->
-    <!-- <div class="section pt-6" id="team">
+  <!-- End FAQ -->
+  <!--  team -->
+  <!-- <div class="section pt-6" id="team">
     <h2 class="secondary">Our Brand's</h2>
     <div class="slider--teams">
       <div class="container">
@@ -431,9 +379,9 @@
   </div> -->
 
 
-    <!-- bootstrap -->
-    <!-- Button trigger modal -->
-    <!-- <button
+  <!-- bootstrap -->
+  <!-- Button trigger modal -->
+  <!-- <button
       type="button"
       class="btn btn-primary"
       data-toggle="modal"
@@ -442,821 +390,831 @@
       Launch demo modal
     </button> -->
 
-<!-- Modals -->
+  <!-- Modals -->
 
-<!-- Modal 1-->
+  <!-- Modal 1-->
 
-<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span>
-        </button>
-        <div class="des">
-          <img src="./images/BurgerLogo.jpg" alt="" />
+  <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
 
-          <div class="info">
-            <h3 class="name">
-              B SE BURGER: STAY UNAPOLOGETICALLY UNIQUE LIKE GOURMET BURGER BRAND
-            </h3>
-            <p>
-              This isn’t your average burger joint.
-              From cheeseburgers to truffle-infused masterpieces, we build statement burgers from scratch to perfection.
-            </p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/BurgerLogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                B SE BURGER: STAY UNAPOLOGETICALLY UNIQUE LIKE GOURMET BURGER BRAND
+              </h3>
+              <p>
+                This isn’t your average burger joint.
+                From cheeseburgers to truffle-infused masterpieces, we build statement burgers from scratch to
+                perfection.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-    <!-- Modal 2 -->
-
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span>
-        </button>
-        <div class="des">
-          <img src="./images/Meallogo.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              BIJI DE MEALS: YOUR HOME AWAY FROM HOME
-            </h3>
-            <p>
-              Staying away makes us crave the warmth and comfort of home-cooked food. BIJI DE MEALS is our little approach to bringing home to you some of the freshest seasonal ingredients.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-<!-- Modal 3-->
-
-<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;X</span>
-        </button>
-        <div class="des">
-          <img src="./images/VandanamLogo.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              VANDANA: PURE AUTHENTIC DOSA BRAND (HERE DOSA DREAMS COME TRUE) 
-            </h3>
-            <p>
-              Foodies! Get ready for some pure, authentic South Indian dosa in our VANDANA world. 
-                  Feel the much-awaited satisfaction with our best, yummy dosas.                 
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 4-->
-
-<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;X</span>
-        </button>
-        <div class="des">
-          <img src="./images/YehHaiMumbaiMeriJaanLogo.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              YE HE MUMBAI MERI JAAN (YMMJ): MUMBAIYA MISAL AND VADAPAV: FAST FOOD FIX WITH A MUMBAI MIX
-            </h3>
-            <p>
-              We try to pay tribute to the very own love letter of Mumbai—Misal & Vadapav—in our style! 
-              From drizzled secret chutneys to fluffy potatoes and favourite toppings, YMMJ is the only escape you need.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Modal 5-->
-
-<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;X</span>
-        </button>
-        <div class="des">
-          <img src="./images/OverloadedWafflelogotype.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              CHAAT STREET: FOR A CHAAT-TASTIC JOURNEY
-            </h3>
-            <p>
-              Come and celebrate the best street food with aromatic spices and lip-smacking flavours. 
-              Each bite here is a nostalgic trip down memory lane
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 6-->
-
-<div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;X</span>
-        </button>
-        <div class="des">
-          <img src="./images/BobaBlastLogo.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              BOBA BLAST: BUBBLE LOVE BONDING WITH THE BLAST
-            </h3>
-            <p>
-              Take our BOBA BLAST flight as we are serving the Gen Z
-              revolution in a cup. We bring you next-level boba that’s as
-              good as you as it is for the gram.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 7-->
-
-<div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;X</span>
-        </button>
-        <div class="des">
-          <img src="./images/HumTumorTealogo.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              BOBA BLAST: BUBBLE LOVE BONDING WITH THE BLAST
-            </h3>
-            <p>
-              Take our BOBA BLAST flight as we are serving the Gen Z
-                revolution in a cup. We bring you next-level boba that’s as
-                good as you as it is for the gram.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 8-->
-
-<div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"  role="document" style=" margin: 199px auto">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;X</span>
-        </button>
-        <div class="des">
-          <img src="./images/GupSuplogo.jpg" alt="" />
-
-          <div class="info">
-            <h3 class="name">
-              CHAAT STREET: FOR A CHAAT-TASTIC JOURNEY
-            </h3>
-            <p>
-              Come and celebrate the best street food with aromatic spices and lip-smacking flavours. 
-              Each bite here is a nostalgic trip down memory lane. 
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
-            <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item">
-              <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/01.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/02.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item">
-              <img src="./images/06.jpg" alt="New york" style="width: 100%" />
-            </div>
-            <div class="item active">
-              <img src="./images/04.jpg" alt="New york" style="width: 100%" />
-            </div>
-          </div>
-          <!-- Left and right controls -->
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-    <div class="container1">
-      <h2 class="tag">Our Brand's</h2>
-      <div class="container2">
-        <ul id="brand-list">
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter1">
-              <img src="./images/BurgerLogo.jpg" alt="Burger" />
-              <h3>Burger</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter2">
-              <img src="./images/Meallogo.jpg" alt="Beeji De Meals" />
-              <h3>Beeji De Meals</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter3">
-              <img src="./images/VandanamLogo.jpg" alt="Vandanam" />
-              <h3>Vandanam</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter4">
-              <img
-                src="./images/YehHaiMumbaiMeriJaanLogo.jpg"
-                alt="Yeh Hai Mumbai Meri Jaan"
-              />
-              <h3>Yeh Hai Mumbai Meri Jaan</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter5">
-              <img
-                src="./images/OverloadedWafflelogotype.png"
-                alt="Over loaded Waffle"
-              />
-              <h3>Over loaded Waffle</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter6">
-              <img src="./images/BobaBlastLogo.jpg" alt="Boba Blast" />
-              <h3>Boba Blast</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter7">
-              <img src="./images/HumTumorTealogo.jpg" alt="Boba Blast" />
-              <h3>Hum Tum or Tea</h3>
-            </div>
-          </li>
-          <li>
-            <div data-toggle="modal"
-            data-target="#exampleModalCenter8">
-              <img src="./images/GupSuplogo.jpg" alt="Boba Blast" />
-              <h3>Gup Sup</h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section scroll-area" id="section7">
-      <div class="ms-main-content ms-career-page d-flex align-items-center">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="ms-hero-box">
-                <h2 class="mb-4 contact-title">
-                  CONTACT <span class="ms-site-color">US</span>
-                </h2>
-                <form
-                  class="ms-contact-form"
-                  method="POST"
-                  action="index.php.html#section7"
-                >
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
-                      <!-- <p class="ms-succes-msg"></p> -->
-                      <!-- <p clas="ms-error-msg"></p> -->
-                    </div>
-                    <div class="form-group col-md-6 pr-md-2 pr-lg-3">
-                      <label for="inputname">NAME*</label>
-                      <input
-                        type="text"
-                        placeholder="Enter Name"
-                        name="name"
-                        class="form-control"
-                        id="inputname"
-                        required
-                      />
-                    </div>
-                    <div class="form-group col-md-6 pl-md-2 pl-lg-3">
-                      <label for="inputemail">EMAIL ID*</label>
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter Email ID"
-                        class="form-control"
-                        id="inputemail"
-                        required
-                      />
-                    </div>
-                    <div class="form-group col-md-6 pr-md-2 pr-lg-3">
-                      <label for="inputphone">PHONE NUMBER*</label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Enter Phone Number"
-                        class="form-control"
-                        id="inputphone"
-                        required
-                      />
-                    </div>
-                    <div class="form-group col-md-6 pl-md-2 pl-lg-3">
-                      <label for="inputcompany">SUBJECT*</label>
-                      <input
-                        type="text"
-                        name="company"
-                        placeholder="Enter Subject"
-                        class="form-control"
-                        id="inputcompany"
-                        required
-                      />
-                    </div>
-                    <div class="form-group col-md-12"></div>
-                    <div class="form-group col-md-12">
-                      <label for="inputmessage">MESSAGE*</label>
-                      <textarea
-                        rows="3"
-                        name="message"
-                        placeholder="Enter Your Message"
-                        class="form-control"
-                        id="inputmessage"
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                  <button
-                    type="submit"
-                    name="submit"
-                    class="btn ms-btn mt-2 d-block ml-auto my-buttons"
-                  >
-                    Submit Message
-                  </button>
-                </form>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
               </div>
             </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+
+  <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/Meallogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                BIJI DE MEALS: YOUR HOME AWAY FROM HOME
+              </h3>
+              <p>
+                Staying away makes us crave the warmth and comfort of home-cooked food. BIJI DE MEALS is our little
+                approach to bringing home to you some of the freshest seasonal ingredients.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3-->
+
+  <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/VandanamLogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                VANDANA: PURE AUTHENTIC DOSA BRAND (HERE DOSA DREAMS COME TRUE)
+              </h3>
+              <p>
+                Foodies! Get ready for some pure, authentic South Indian dosa in our VANDANA world.
+                Feel the much-awaited satisfaction with our best, yummy dosas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 4-->
+
+  <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/YehHaiMumbaiMeriJaanLogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                YE HE MUMBAI MERI JAAN (YMMJ): MUMBAIYA MISAL AND VADAPAV: FAST FOOD FIX WITH A MUMBAI MIX
+              </h3>
+              <p>
+                We try to pay tribute to the very own love letter of Mumbai—Misal & Vadapav—in our style!
+                From drizzled secret chutneys to fluffy potatoes and favourite toppings, YMMJ is the only escape you
+                need.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 5-->
+
+  <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/OverloadedWafflelogotype.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                CHAAT STREET: FOR A CHAAT-TASTIC JOURNEY
+              </h3>
+              <p>
+                Come and celebrate the best street food with aromatic spices and lip-smacking flavours.
+                Each bite here is a nostalgic trip down memory lane
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 6-->
+
+  <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/BobaBlastLogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                BOBA BLAST: BUBBLE LOVE BONDING WITH THE BLAST
+              </h3>
+              <p>
+                Take our BOBA BLAST flight as we are serving the Gen Z
+                revolution in a cup. We bring you next-level boba that’s as
+                good as you as it is for the gram.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 7-->
+
+  <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/HumTumorTealogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                BOBA BLAST: BUBBLE LOVE BONDING WITH THE BLAST
+              </h3>
+              <p>
+                Take our BOBA BLAST flight as we are serving the Gen Z
+                revolution in a cup. We bring you next-level boba that’s as
+                good as you as it is for the gram.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 8-->
+
+  <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style=" margin: 199px auto">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+          <div class="des">
+            <img src="./images/GupSuplogo.jpg" alt="" />
+
+            <div class="info">
+              <h3 class="name">
+                CHAAT STREET: FOR A CHAAT-TASTIC JOURNEY
+              </h3>
+              <p>
+                Come and celebrate the best street food with aromatic spices and lip-smacking flavours.
+                Each bite here is a nostalgic trip down memory lane.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel2" data-slide-to="5" class="active"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item">
+                <img src="./images/05.jpg" alt="Los Angeles" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/03.jpg" alt="Chicago" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/01.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/02.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item">
+                <img src="./images/06.jpg" alt="New york" style="width: 100%" />
+              </div>
+              <div class="item active">
+                <img src="./images/04.jpg" alt="New york" style="width: 100%" />
+              </div>
+            </div>
+            <!-- Left and right controls -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Our Ways section -->
+  <div id="OurWays" class="container flex section pt-6">
+    <div class="container">
+      <h2 class="secondary">Our Ways</h2>
+      <div class="row ways">
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">01</h1>
+            <h2 class="card-title">Food Philosophy</h2>
+            <p class="card-paragraph">
+              No mystery meals here, just pure, flavourful innovation. We
+              craft food that’s as exciting as the future.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">02</h1>
+            <h2 class="card-title">Sustainability</h2>
+            <p class="card-paragraph">
+              We bring you seasonal flavours, knowing your food journeyed
+              responsibly and supporting local heroes. Every aspect of our
+              operations is rooted in a commitment to environmental
+              protection.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">03</h1>
+            <h2 class="card-title">Sourcing</h2>
+            <p class="card-paragraph">
+              We believe that great food starts with great ingredients. That’s
+              why we go to great lengths to source the finest and freshest
+              food for you from trusted partners around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">04</h1>
+            <h2 class="card-title">Quality Products</h2>
+            <p class="card-paragraph">
+              When you demand the best, you deserve nothing less. Every
+              product that graces our shelves is hand-selected for its
+              exceptional taste, texture, and purity.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">05</h1>
+            <h2 class="card-title">Our Purpose</h2>
+            <p class="card-paragraph">
+              We believe in flavour-forward food that doesn’t cost the earth
+              (literally). We envision a world where incredible, sustainable
+              food experiences are accessible to everyone.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">06</h1>
+            <h2 class="card-title">Performance Marketing</h2>
+            <p class="card-paragraph">
+              As a forward-thinking food brand, we embrace innovations at
+              every step. Our mission is not only to satisfy the customers but
+              also to bring the best to the table every time. We work more
+              than increasing sales to enhance the overall customer experience
+              with technology-driven performance marketing.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">07</h1>
+            <h2 class="card-title">Indian Food Factory</h2>
+            <p class="card-paragraph">
+              We bring vast and varied cuisines of India to your plate under
+              one roof. Here, each dish is crafted using authentic ingredients
+              and traditional techniques. This way, we ensure an experience
+              that is as genuine as it is delicious.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="cards ourways-box">
+            <h1 class="ourways-title">08</h1>
+            <h2 class="card-title">Supply Chain with HR Management</h2>
+            <p class="card-paragraph">
+              Say goodbye to the daily hustle of sourcing local ingredients or
+              managing vendor relationships. We harmonise supply chain
+              management with HR support. This ensures that the outlets run
+              like a well-oiled machine.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="widget company-intro-widget">
-                <a href="index.html" class="site-logo"
-                  ><img
-                    src="./images/logo_main.jpg"
-                    class="logo"
-                    style="width: 70px"
-                /></a>
-                <p>High revenue with min resource & low investment</p>
-                <!-- <ul class="company-footer-contact-list">
+  <!-- End Our Ways section -->
+
+  <div class="section scroll-area" id="section7">
+    <div class="ms-main-content ms-career-page d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ms-hero-box">
+              <h2 class="mb-4 contact-title">
+                CONTACT <span class="ms-site-color">US</span>
+              </h2>
+              <form class="ms-contact-form" method="POST" action="index.php.html#section7">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <!-- <p class="ms-succes-msg"></p> -->
+                    <!-- <p clas="ms-error-msg"></p> -->
+                  </div>
+                  <div class="form-group col-md-6 pr-md-2 pr-lg-3">
+                    <label for="inputname">NAME*</label>
+                    <input type="text" placeholder="Enter Name" name="name" class="form-control" id="inputname"
+                      required />
+                  </div>
+                  <div class="form-group col-md-6 pl-md-2 pl-lg-3">
+                    <label for="inputemail">EMAIL ID*</label>
+                    <input type="email" name="email" placeholder="Enter Email ID" class="form-control" id="inputemail"
+                      required />
+                  </div>
+                  <div class="form-group col-md-6 pr-md-2 pr-lg-3">
+                    <label for="inputphone">PHONE NUMBER*</label>
+                    <input type="tel" name="phone" placeholder="Enter Phone Number" class="form-control" id="inputphone"
+                      required />
+                  </div>
+                  <div class="form-group col-md-6 pl-md-2 pl-lg-3">
+                    <label for="inputcompany">SUBJECT*</label>
+                    <input type="text" name="company" placeholder="Enter Subject" class="form-control" id="inputcompany"
+                      required />
+                  </div>
+                  <div class="form-group col-md-12"></div>
+                  <div class="form-group col-md-12">
+                    <label for="inputmessage">MESSAGE*</label>
+                    <textarea rows="3" name="message" placeholder="Enter Your Message" class="form-control"
+                      id="inputmessage" required></textarea>
+                  </div>
+                </div>
+                <button type="submit" name="submit" class="btn ms-btn mt-2 d-block ml-auto my-buttons">
+                  Submit Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="widget company-intro-widget">
+              <a href="index.html" class="site-logo"><img src="./images/logo_main.jpg" class="logo"
+                  style="width: 70px" /></a>
+              <p>High revenue with min resource & low investment</p>
+              <!-- <ul class="company-footer-contact-list">
                 <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</li>
                 <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</li>
               </ul> -->
-              </div>
             </div>
-            <!-- widget end -->
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="widget newsletter-widget">
-                <h5 class="widget-title">Follow Us</h5>
-                <ul class="social-icons">
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-linkedin"></i></li>
-                  <li><i class="fa-brands fa-x-twitter"></i></li>
-                  <li><i class="fa-brands fa-youtube"></i></li>
-                </ul>
-                <ul class="company-footer-contact-list">
-                  <li>
-                    <i class="fa fa-phone" aria-hidden="true"></i
-                    >&nbsp;&nbsp;+91 94097 86777
-                  </li>
-                  <li>
-                    <i class="fa fa-envelope" aria-hidden="true"></i
-                    >&nbsp;&nbsp;contact@tabletalk.in
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <!-- widget end -->
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="widget newsletter-widget">
+              <h5 class="widget-title">Follow Us</h5>
+              <ul class="social-icons">
+                <li><a class="socialIconCustom" target=”_blank”
+                    href="https://www.instagram.com/tabletalk_india?igsh=MXNwczZtaHJjdTRtZQ=="><i
+                      class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="socialIconCustom" target=”_blank” href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="socialIconCustom" target=”_blank” href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a class="socialIconCustom" target=”_blank” href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a class="socialIconCustom" target=”_blank” href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+              <ul class="company-footer-contact-list">
+                <li>
+                  <a class="socialIconCustom" href="tel:+919409786777"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 94097 86777</a>
+                </li>
+                <li>
+                  <a class="socialIconCustom" href="mailto:contact@tabletalk.in"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;contact@tabletalk.in</a>
+                </li>
+              </ul>
             </div>
-            <!-- widget end -->
+          </div>
+          <!-- widget end -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-sm-center text-center">
+            <span class="copy-right-text">© 2024
+              <a href="https://createdinam.in/" target=”_blank”>❤️ Createdinam</a> All
+              Rights Reserved.</span>
           </div>
         </div>
       </div>
-      <div class="footer-bottom text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 text-sm-center text-center">
-              <span class="copy-right-text"
-                >© 2024
-                <a href="https://codepen.io/anupkumar92">❤️ Createdinam</a> All
-                Rights Reserved.</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- footer-bottom end -->
-    </footer>
+    </div>
+    <!-- footer-bottom end -->
+  </footer>
 
-    <!--   BTN   -->
-    <!-- End Footer -->
+  <!--   BTN   -->
+  <!-- End Footer -->
 
-    <!-- Ion Icons Js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
-      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
-    ></script>
-    <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   class TeamSlide {
-      //     constructor() {
-      //       this.teamData = document.querySelectorAll(".team-data");
-      //       this.index = 0;
-      //       this.slide();
-      //     }
+  <!-- Ion Icons Js -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   class TeamSlide {
+    //     constructor() {
+    //       this.teamData = document.querySelectorAll(".team-data");
+    //       this.index = 0;
+    //       this.slide();
+    //     }
 
-      //     slide() {
-      //       setInterval(() => {
-      //         if (this.teamData.length === 0) {
-      //           return;
-      //         }
+    //     slide() {
+    //       setInterval(() => {
+    //         if (this.teamData.length === 0) {
+    //           return;
+    //         }
 
-      //         this.teamData[this.index].classList.remove('team-data-activate');
+    //         this.teamData[this.index].classList.remove('team-data-activate');
 
-      //         this.index++;
+    //         this.index++;
 
-      //         if (this.index > this.teamData.length - 1) {
-      //           this.index = 0;
-      //         }
+    //         if (this.index > this.teamData.length - 1) {
+    //           this.index = 0;
+    //         }
 
-      //         this.teamData[this.index].classList.add('team-data-activate');
+    //         this.teamData[this.index].classList.add('team-data-activate');
 
-      //       }, 3000);
-      //     }
-      //   }
-      //   new TeamSlide();
-      // });
+    //       }, 3000);
+    //     }
+    //   }
+    //   new TeamSlide();
+    // });
 
-      function closeMenu() {
-        document.getElementById("check").checked = false;
+    function closeMenu() {
+      document.getElementById("check").checked = false;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const listItems = document.querySelectorAll("#brand-list li");
+      let currentIndex = 0;
+
+      function scaleNextItem() {
+        listItems.forEach((item) => {
+          item.classList.remove("scale-up");
+        });
+
+        listItems[currentIndex].classList.add("scale-up");
+
+        currentIndex = (currentIndex + 1) % listItems.length;
+
+        setTimeout(scaleNextItem, 3000);
       }
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const listItems = document.querySelectorAll("#brand-list li");
-        let currentIndex = 0;
+      scaleNextItem();
+    });
+  </script>
+</body>
 
-        function scaleNextItem() {
-          listItems.forEach((item) => {
-            item.classList.remove("scale-up");
-          });
-
-          listItems[currentIndex].classList.add("scale-up");
-
-          currentIndex = (currentIndex + 1) % listItems.length;
-
-          setTimeout(scaleNextItem, 3000);
-        }
-
-        scaleNextItem();
-      });
-    </script>
-  </body>
 </html>
