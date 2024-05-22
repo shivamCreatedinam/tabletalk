@@ -197,7 +197,9 @@ main {
 .text p {
   font-family: Poppins_regular;
 }
-
+.text .secondary {
+ text-align: start;
+}
 .tertiary {
   font-size: 24px;
   font-weight: 400;
